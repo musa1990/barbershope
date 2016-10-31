@@ -1,12 +1,12 @@
 html,
 body {
-  min-width: 1140px;
+   min-width: 1122px;
   margin: 0;
   padding: 0;
 }
 
 body {
-  fbackground: #000000 url("../barbershop-shop.jpg") no-repeat 50% 3px;
+  fbackground: #000000 url("../barbershop-item.jpg") no-repeat 50% 3px;
   background-size: 1122px auto;
 }
 header {
@@ -17,13 +17,16 @@ header {
     margin-bottom: 48px;
   
 }
+ .main-header {
+  /* Только для оформления сетки */
+  min-height: 70px;
+}
 header .logo{
     float: left;
     background: rgba(255, 45, 82, 0.2);
   box-shadow: 0 0 0 3px rgb(255, 45, 82);
     min-height: 70px;
 }
-
 nav .top-menu{
      float: left;
 }
@@ -38,6 +41,7 @@ nav .top-menu{
    display: inline-block;
    
 }
+ 
 .user-block{
     float: right;
      background: rgba(25, 255, 82, 0.2);
@@ -66,44 +70,32 @@ h1{
   display: inline-block;
      
 }
-input{
-    display: block;
-}
-.index-content-left{
+.catitem-content-left{
     float: left;
     background: rgba(128, 0, 0, 0.2);
   box-shadow: 0 0 0 3px green;  
-    min-height: 570px;
+   width: 460px;
 }
-.index-content-right{
+.catitem-content-left img{
+    margin-right: 16px;
+}
+.catitem-content-left img:first-child{
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
+.catitem-content-left img:last-child{
+     margin-right: 0px;
+}
+.catitem-content-right{
     padding-top: 30px;
     float: right;
     background: rgba(128, 0, 0, 0.2);
   box-shadow: 0 0 0 3px green;
-   max-width: 700px;
-}
- div .item{
-   margin-bottom: 18px;
-     padding-left: 15px;
-     vertical-align: top;
-     width: 220px;
-     height: 270px;
-    display: inline-block;
-     box-sizing: border-box;
-     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-.index-content-right ul{
-    display: inline-block;
-    margin-top: 23px;
-     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-.page-navigation li{
-    display: inline-block;
+    width:400px;
+    height: 540px;
 }
 footer{
-    margin-top: 50px;
+    margin-top: 25px;
     padding-top: 60px;
     padding-bottom: 25px;
     background: rgba(128, 0, 0, 0.2);
@@ -139,7 +131,6 @@ footer{
   /* Только для оформления сетки */
   min-height: 90px;
 }
-
  .clearfix::after {
     content: "";
     display: table;

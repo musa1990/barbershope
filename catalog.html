@@ -3,43 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>Catalog</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
+
     <header> <!-- Можно не писать класс, селектор по имени тега -->
-      <div class="container">
+      <div class="container clearfix">
        
+        <a class="logo" href="#" title="#" ><img src="http://placehold.it/150x65" alt="Барбершоп «Бородинский»"></a>
+        
         <nav class="main-navigation">
-          <div class="index-logo"> <!-- Тут должна быть ссылка -->
-            <a href="#" title=""><img src="http://placehold.it/150x100" alt="Барбершоп «Бородинский»"></a>
-          </div>
-
           <ul class="top-menu">
-            <li><a href="#" title="">Информация</a></li> <!-- Можно сокращать, писать в одну строку. То есть <li><a ...> ... </a></li> И прописываем атрибут title у ВСЕХ ссылок. -->
-            <li><a href="#" title="">Новости</a></li>
-            <li><a href="#" title="">Прайс-лист</a></li>
-            <li><a href="#" title="">Магазин</a></li>
-            <li><a href="#" title="">Контакты</a></li>
+            <li><a href="#" title="#">Информация</a></li> <!-- Можно сокращать, писать в одну строку. То есть <li><a ...> ... </a></li> И прописываем атрибут title у ВСЕХ ссылок. -->
+            <li><a href="#" title="#">Новости</a></li>
+            <li><a href="#" title="#">Прайс-лист</a></li>
+            <li><a href="#" title="#">Магазин</a></li>
+            <li><a href="#" title="#">Контакты</a></li>
           </ul>
-
         </nav>
 
         <div class="user-block">
-          <a class="login" href="#" title="">Вход</a>
+          <a class="login" href="#" title="#">Вход</a>
         </div>
-
+        
       </div>
     </header> <!-- Отделяем смысловые блоки пустыми строками (то есть <header> от <main> отделяй, например, 2-мя пустыми строками) -->
-   
-    <main class="container"> <!-- Отступы не соблюдены -->
+
+
+    <main class="container clearfix"> <!-- Отступы не соблюдены -->
       <h1>Средства для ухода</h1>
       
       <ul class="breadcrumbs">
-        <li><a href="#" title="">Главная</a></li>
-        <li><a href="#" title="">Магазин</a></li>
+        <li><a href="#" title="#">Главная</a></li>
+        <li><a href="#" title="#">Магазин</a></li>
         <li><span>Средства для ухода</span></li>
       </ul>
       
-      <form action="" class="index-content-left">
+      <form action="#" class="index-content-left">
         <h2>Производители</h2>
         <input type="checkbox" id="check1"><label for="check1">Baxter of California</label>
         <input type="checkbox" id="check2"><label for="check2">Mr Natty</label>
@@ -47,85 +48,96 @@
         <input type="checkbox" id="check4"><label for="check4">Malin+Goetz</label>
         <input type="checkbox" id="check5"><label for="check4">Murray’s</label>
         <input type="checkbox" id="check6"><label for="check4">American Crew</label>
-        <h2>Группы товаров </h2>
-        <input type="checkbox" id="check7"><label for="check7">Бритвенные  принадлежности</label> <!-- Радиокнопки должны быть -->
-        <input type="checkbox" id="check8"><label for="check8">Средства для ухода</label>
-        <input type="checkbox" id="check9"><label for="check9">Аксессуары</label>
+        <h2>Группы товаров</h2>
+        <input type="radio" id="check7"><label for="check7">Бритвенные принадлежности</label> <!-- Радиокнопки должны быть -->
+        <input type="radio" id="check8"><label for="check8">Средства для ухода</label>
+        <input type="radio" id="check9"><label for="check9">Аксессуары</label>
         <button class="btn" type="submit">Показать</button>
       </form>
       
       <div class="index-content-right">
+       
         <div class="item">
-          <a href="#" title=""><img src="http://placehold.it/150x100" alt=""></a> <!-- Начинать тег, в который вложены другие - нужно закрывать на этой же строке. Не забываем про alt атрибут у изображений -->
-          <a href="#" title=""><p class="item-name">Набор для путешествий<span>«Baxter of California»</span></p></a> <!-- Делаем разными ссылками -->
+          <a href="#" title="#"><img src="http://placehold.it/150x100" alt="#"></a> <!-- Начинать тег, в который вложены другие - нужно закрывать на этой же строке. Не забываем про alt атрибут у изображений -->
+          <a href="#" title="#"><p class="item-name">Набор для путешествий<span>«Baxter of California»</span></p></a> <!-- Делаем разными ссылками -->
           <div class="content-price">
             <span class="price">2 900 руб.</span>
-            <a class="btn" href="#" title="">купить</a>
+            <a class="btn" href="#" title="#">Купить</a>
           </div>
         </div>
+        
         <div class="item">
-          <a href="#" title=""><img src="http://placehold.it/150x100" alt=""></a>
-          <a href="#" title=""><p class="item-name">Увлажняющий кондиционер<span>«Baxter of California»</span></p></a>
-          <span class="price">750 руб.</span>
-          <a class="btn" href="#" title="">купить</a>
+          <a href="#" title="#"><img src="http://placehold.it/150x100" alt="#"></a>
+          <a href="#" title="#"><p class="item-name">Увлажняющий кондиционер<span>«Baxter of California»</span></p></a>
+          <div class="content-price">
+            <span class="price">750 руб.</span>
+            <a class="btn" href="#" title="#">Купить</a>
+          </div>
         </div>
+        
         <div class="item">
-          <a href="#" title=""><img src="http://placehold.it/150x100" alt=""></a>
-          <a href="#" title=""><p class="item-name">Гель для волос <span>«Suavecito»</span></p></a> <!-- Строчными буквами -->
+          <a href="#" title="#"><img src="http://placehold.it/150x100" alt="#"></a>
+          <a href="#" title="#"><p class="item-name">Гель для волос <span>«Suavecito»</span></p></a> <!-- Строчными буквами -->
           <div class="content-price">
             <span class="price">290 руб.</span>
-            <a class="btn" href="#" title="">купить</a>
+            <a class="btn" href="#" title="#">Купить</a>
           </div>
         </div>
+        
         <div class="item">
-          <a href="#" title=""><img src="http://placehold.it/150x100" alt=""></a>
-          <a href="#" title=""><p class="item-name">Глина для укладки волос<span>«American crew»</span></p></a> <!-- Лишний пробел -->
+          <a href="#" title="#"><img src="http://placehold.it/165x100" alt="#"></a>
+          <a href="#" title="#"><p class="item-name">Глина для укладки волос<span>«American crew»</span></p></a> <!-- Лишний пробел -->
           <div class="content-price">
             <span class="price">500 руб.</span>
-            <a class="btn" href="#" title="">купить</a>
+            <a class="btn" href="#" title="#">Купить</a>
           </div>
         </div>
+        
         <div class="item">
-          <a href="#" title=""><img src="http://placehold.it/150x100" alt=""></a>
-          <a href="#" title=""><p class="item-name">Гель для волос<span>«American crew»</span></p></a>
+          <a href="#" title="#"><img src="http://placehold.it/150x100" alt="#"></a>
+          <a href="#" title="#"><p class="item-name">Гель для волос<span>«American crew»</span></p></a>
           <div class="content-price">
             <span class="price">300 руб.</span>
-            <a class="btn" href="#" title="">купить</a>
+            <a class="btn" href="#" title="#">Купить</a>
           </div>
         </div>
+        
         <div class="item">
-          <a href="#" title=""><img src="http://placehold.it/150x100" alt=""></a>
-          <a href="#" title=""><p class="item-name">Набор для бритья<span>«Baxter of California»</span></p></a>
+          <a href="#" title="#"><img src="http://placehold.it/150x100" alt="#"></a>
+          <a href="#" title="#"><p class="item-name">Набор для бритья<span>«Baxter of California»</span></p></a>
           <div class="content-price">
             <span class="price">3 900 руб.</span>
-            <a class="btn" href="#" title="">купить</a>
+            <a class="btn" href="#" title="#">Купить</a>
           </div>
         </div>
+        
         <ul class="page-navigation">
-          <li><a class="btn" href="#" title="">1</a></li>
+          <li><a class="btn" href="#" title="#">1</a></li>
           <li><span>2</span></li>
-          <li><a class="btn" href="#" title="">3</a></li>
-          <li><a class="btn" href="#" title="">4</a></li>
+          <li><a class="btn" href="#" title="#">3</a></li>
+          <li><a class="btn" href="#" title="#">4</a></li>
         </ul>
+        
       </div>
     </main>
+    
     <footer> <!-- Можно не задать класс, как в случае с <header> -->
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts"> <!-- Здесь не текст, убираем перенос и делаем отдельными div-блоками -->
           <div>Барбершоп «Бородинский»</div>
           <div>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</div>
-          <div><a href="#" title="">Как нас найти?</a></div>
-          Телефон: +7 (812) 666-02-66
+          <div><a href="#" title="#">Как нас найти?</a></div>
+          <div>Телефон: +7 (812) 666-02-66</div>
         </section>
         <section class="footer-social">
           Давайте дружить! <!-- Лишнаяя вложенность -->
-          <a class="social-btn social-btn-vk" href="#" title="">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#" title="">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#" title="">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="#" title="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#" title="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#" title="#">Инстаграм</a>
         </section>
         <section class="footer-copyright">
-          <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru" title="">HTML Academy</a>
+          Разработано:
+          <a class="btn" href="https://htmlacademy.ru" title="#">HTML Academy</a>
         </section>
       </div>
     </footer>
