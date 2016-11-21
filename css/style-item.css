@@ -1,137 +1,132 @@
 html,
 body {
-   min-width: 1122px;
-  margin: 0;
-  padding: 0;
+    min-width: 1122px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  fbackground: #000000 url("../barbershop-item.jpg") no-repeat 50% 3px;
-  background-size: 1122px auto;
+    fbackground: #000000 url("../barbershop-item.jpg") no-repeat 50% 3px;
+    background-size: 1122px auto;
 }
+
 header {
-  /* Только для оформления сетки */
-  min-height: 70px;
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
     margin-bottom: 48px;
-  
 }
- .main-header {
-  /* Только для оформления сетки */
-  min-height: 70px;
-}
-header .logo{
+
+.main-header {}
+
+header .logo {
     float: left;
     background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-    min-height: 70px;
-}
-nav .top-menu{
-     float: left;
-}
-.main-navigation ul{
-     background: rgba(25, 255, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(7, 245, 82);
-    min-height: 38px;
+    box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
-
-.top-menu li{
-   display: inline-block;
-   
+nav .top-menu {
+    float: left;
 }
- 
-.user-block{
+
+.main-navigation ul {
+    background: rgba(25, 255, 82, 0.2);
+    box-shadow: 0 0 0 3px rgb(7, 245, 82);
+}
+
+.top-menu li {
+    display: inline-block;
+}
+
+.user-block {
     float: right;
-     background: rgba(25, 255, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(7, 245, 82);
-    min-height: 70px;
+    background: rgba(25, 255, 82, 0.2);
+    box-shadow: 0 0 0 3px rgb(7, 245, 82);
     margin-right: 50px;
 }
+
 .container {
-  width: 940px;
-  padding: 0 10px;
-  margin: 0 auto;
-  /* Только для оформления сетки */
-  background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px red;
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    background: rgba(128, 0, 0, 0.2);
+    box-shadow: 0 0 0 3px red;
 }
-h1{
+
+h1 {
     text-transform: uppercase;
     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
+    box-shadow: 0 0 0 3px green;
 }
-.breadcrumbs{
-  background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;  
+
+.breadcrumbs {
+    background: rgba(128, 0, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
 }
-.breadcrumbs li{
-  display: inline-block;
-     
+
+.breadcrumbs li {
+    display: inline-block;
 }
-.catitem-content-left{
+
+.catitem-content-left {
     float: left;
     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;  
-   width: 460px;
+    box-shadow: 0 0 0 3px green;
+    width: 460px;
 }
-.catitem-content-left img{
+
+.catitem-content-left img {
     margin-right: 16px;
 }
-.catitem-content-left img:first-child{
+
+.catitem-content-left img:first-child {
     margin-right: 0px;
     margin-bottom: 20px;
 }
-.catitem-content-left img:last-child{
-     margin-right: 0px;
+
+.catitem-content-left img:last-child {
+    margin-right: 0px;
 }
-.catitem-content-right{
+
+.catitem-content-right {
     padding-top: 30px;
     float: right;
     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-    width:400px;
+    box-shadow: 0 0 0 3px green;
+    width: 400px;
     height: 540px;
 }
-footer{
+
+footer {
     margin-top: 25px;
     padding-top: 60px;
     padding-bottom: 25px;
     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
+    box-shadow: 0 0 0 3px green;
 }
-.footer-contacts {
-  float: left;
-  width: 320px;
-  margin-right: 60px;
-    background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
 
-  /* Только для оформления сетки */
-  min-height: 90px;
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+    background: rgba(128, 0, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
 }
 
 .footer-social {
-  float: left;
-  width: 180px;
+    float: left;
+    width: 180px;
     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-
-  /* Только для оформления сетки */
-  min-height: 90px;
+    box-shadow: 0 0 0 3px green;
 }
 
 .footer-copyright {
-  float: right;
-  width: 180px;
+    float: right;
+    width: 180px;
     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-
-  /* Только для оформления сетки */
-  min-height: 90px;
+    box-shadow: 0 0 0 3px green;
 }
- .clearfix::after {
+
+.clearfix::after {
     content: "";
     display: table;
     clear: both;

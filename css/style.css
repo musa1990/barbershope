@@ -1,146 +1,144 @@
 html,
 body {
-  min-width: 1140px;
-  margin: 0;
-  padding: 0;
+    min-width: 1140px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  fbackground: #000000 url("../barbershop-shop.jpg") no-repeat 50% 3px;
-  background-size: 1122px auto;
+    background: #000000 url("../barbershop-shop.jpg") no-repeat 50% 3px;
+    background-size: 1122px auto;
 }
+
 header {
-  /* Только для оформления сетки */
-  min-height: 70px;
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
+    /* Только для оформления сетки */
+    background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
     margin-bottom: 48px;
-  
 }
-header .logo{
+
+header .logo {
     float: left;
     background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-    min-height: 70px;
+    box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
-nav .top-menu{
-     float: left;
-}
-.main-navigation ul{
-     background: rgba(25, 255, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(7, 245, 82);
-    min-height: 38px;
+.main-navigation {
+    float: left;
 }
 
-
-.top-menu li{
-   display: inline-block;
-   
+.main-navigation ul {
+    background: rgba(25, 255, 82, 0.2);
+    box-shadow: 0 0 0 3px rgb(7, 245, 82);
 }
-.user-block{
+
+.top-menu li {
+    display: inline-block;
+}
+
+.user-block {
     float: right;
-     background: rgba(25, 255, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(7, 245, 82);
-    min-height: 70px;
+    background: rgba(25, 255, 82, 0.2);
+    box-shadow: 0 0 0 3px rgb(7, 245, 82);
     margin-right: 50px;
 }
+
 .container {
-  width: 940px;
-  padding: 0 10px;
-  margin: 0 auto;
-  /* Только для оформления сетки */
-  background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px red;
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    /* Только для оформления сетки */
+    background: rgba(128, 0, 0, 0.2);
+    box-shadow: 0 0 0 3px red;
 }
-h1{
+
+h1 {
     text-transform: uppercase;
     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
+    box-shadow: 0 0 0 3px green;
 }
-.breadcrumbs{
-  background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;  
+
+.breadcrumbs {
+    background: rgba(128, 0, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
 }
-.breadcrumbs li{
-  display: inline-block;
-     
+
+.breadcrumbs li {
+    display: inline-block;
 }
-input{
+
+input {
     display: block;
 }
-.index-content-left{
+
+.index-content-left {
     float: left;
     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;  
-    min-height: 570px;
+    box-shadow: 0 0 0 3px green;
+    width: 201px;
 }
-.index-content-right{
+
+.index-content-right {
     padding-top: 30px;
-    float: right;
+    margin-left: 241px;
     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-   max-width: 700px;
+    box-shadow: 0 0 0 3px green;
 }
- div .item{
-   margin-bottom: 18px;
-     padding-left: 15px;
-     vertical-align: top;
-     width: 220px;
-     height: 270px;
+
+div .item {
+    margin-bottom: 18px;
+    padding-left: 15px;
+    vertical-align: top;
+    width: 220px;
+    height: 270px;
     display: inline-block;
-     box-sizing: border-box;
-     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
+    box-sizing: border-box;
+    background: rgba(128, 0, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
 }
-.index-content-right ul{
+
+.index-content-right ul {
     display: inline-block;
     margin-top: 23px;
-     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
+    background: rgba(128, 0, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
 }
-.page-navigation li{
+
+.page-navigation li {
     display: inline-block;
 }
-footer{
+
+footer {
     margin-top: 50px;
     padding-top: 60px;
     padding-bottom: 25px;
     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
+    box-shadow: 0 0 0 3px green;
 }
-.footer-contacts {
-  float: left;
-  width: 320px;
-  margin-right: 60px;
-    background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
 
-  /* Только для оформления сетки */
-  min-height: 90px;
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+    background: rgba(128, 0, 0, 0.2);
+    box-shadow: 0 0 0 3px green;
 }
 
 .footer-social {
-  float: left;
-  width: 180px;
+    float: left;
+    width: 180px;
     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-
-  /* Только для оформления сетки */
-  min-height: 90px;
+    box-shadow: 0 0 0 3px green;
 }
 
 .footer-copyright {
-  float: right;
-  width: 180px;
+    float: right;
+    width: 180px;
     background: rgba(128, 0, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-
-  /* Только для оформления сетки */
-  min-height: 90px;
+    box-shadow: 0 0 0 3px green;
 }
 
- .clearfix::after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
