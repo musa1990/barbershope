@@ -1,35 +1,63 @@
 html,
 body {
-    min-width: 1140px;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    min-width: 960px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    background: #f9f6f3;
 }
 
-body {
-    background: #000000 url("../barbershop-shop.jpg") no-repeat 50% 3px;
-    background-size: 1122px auto;
+ul,
+li {
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
-    /* Только для оформления сетки */
-    background: rgba(0, 128, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
-    margin-bottom: 48px;
+    margin-bottom: 58px;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 header .logo {
     float: left;
-    background: rgba(255, 45, 82, 0.2);
-    box-shadow: 0 0 0 3px rgb(255, 45, 82);
+    margin-top: 22px;
+    margin-left: 20px;
 }
 
 .main-navigation {
     float: left;
+    margin-left: 20px;
 }
 
 .main-navigation ul {
-    background: rgba(25, 255, 82, 0.2);
-    box-shadow: 0 0 0 3px rgb(7, 245, 82);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+    color: #ffffff;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.main-navigation a {
+    display: block;
+    font-size: 16px;
+    padding: 25px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-navigation a:hover {
+    background: #242424;
 }
 
 .top-menu li {
@@ -38,108 +66,472 @@ header .logo {
 
 .user-block {
     float: right;
-    background: rgba(25, 255, 82, 0.2);
-    box-shadow: 0 0 0 3px rgb(7, 245, 82);
-    margin-right: 50px;
+    max-width: 140px;
+}
+
+.login {
+    position: relative;
+    display: inline-block;
+    padding: 25px 20px;
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: top;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.login:hover {
+    background-color: #242424;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    background: #ff0000;
 }
 
 .container {
     width: 940px;
     padding: 0 10px;
     margin: 0 auto;
-    /* Только для оформления сетки */
-    background: rgba(128, 0, 0, 0.2);
-    box-shadow: 0 0 0 3px red;
 }
 
+main {}
+
 h1 {
+    font-family: "PT Sans Narrow", "Arial", bold;
+    font-size: 30px;
     text-transform: uppercase;
-    background: rgba(128, 0, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
+    margin-bottom: 24px;
 }
 
 .breadcrumbs {
-    background: rgba(128, 0, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
+    margin-bottom: 23px;
 }
 
 .breadcrumbs li {
+    position: relative;
+    padding-left: 22px;
     display: inline-block;
+    margin-right: 15px;
+}
+
+.breadcrumbs li:first-child {
+    padding-left: 0px;
+}
+
+.breadcrumbs li::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background: #000000;
+    transform: rotate(-45deg);
+}
+
+.breadcrumbs::before:first-child {
+    background: #ccc;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #000;
 }
 
 input {
     display: block;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    display: block;
+    margin: 10px 0;
+    line-height: 20px;
+    padding-left: 45px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    background-color: #f9f9f3;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+label {
+    padding-bottom: 7px;
+}
+label:hover{
+    background-color:#663d15;
+}
 .index-content-left {
     float: left;
-    background: rgba(128, 0, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
     width: 201px;
 }
 
+.index-content-left h2 {
+    margin-top: 27px;
+    font-size: 24px;
+    margin-bottom: 31px;
+}
+
+.index-content-left h2.name-of-group {
+    margin-top: 45px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: block;
+    margin: 10px 0;
+    line-height: 20px;
+    padding-left: 45px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    background-color: #f9f9f3;
+    position: absolute;
+    top: 0px;
+    border-radius: 50%;
+    left: 0px;
+}
+
+input[type="radio"]:checked + label::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 16px;
+    margin-top: 32px;
+    padding: 10px 25px 10px 33px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    vertical-align: top;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#663d15;
+}
 .index-content-right {
     padding-top: 30px;
     margin-left: 241px;
-    background: rgba(128, 0, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
 }
 
 div .item {
-    margin-bottom: 18px;
-    padding-left: 15px;
+    margin-right: 16px;
+    margin-bottom: 20px;
     vertical-align: top;
     width: 220px;
-    height: 270px;
     display: inline-block;
     box-sizing: border-box;
-    background: rgba(128, 0, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
+    background-color: #ffffff;
+}
+
+div .item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.item-name {
+    display: inline-block;
+    margin-left: 16px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: initial;
+    margin-top: 3px;
+}
+
+.item span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.content-price {}
+
+.content-price a,
+.content-price span {
+    vertical-align: top;
+    font-size: 0;
+}
+
+.content-price span.price {
+    max-width: 110px;
+    padding: 10px 27px;
+    background-color: #e5e5e5;
+    margin-left: 18px;
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 14px;
+    width: 110px;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+}
+
+.content-price .btn {
+    padding: 10px 17px;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 14px;
+    margin-left: -4px;
 }
 
 .index-content-right ul {
     display: inline-block;
     margin-top: 23px;
-    background: rgba(128, 0, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
 }
 
 .page-navigation li {
     display: inline-block;
+    vertical-align: top;
+}
+
+.page-navigation li span,
+.page-navigation li a {
+    display: inline-block;
+    padding: 9px 18px;
+    margin-right: 4px;
+    margin-top: 3px;
+    vertical-align: top;
 }
 
 footer {
     margin-top: 50px;
-    padding-top: 60px;
-    padding-bottom: 25px;
-    background: rgba(128, 0, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
+    padding-top: 57px;
+    padding-bottom: 40px;
+    color: #ffffff;
+    /* лучше явно прописать везде для футера */
+    background: #252525 url("../img/pattern-black.jpg");
 }
 
 .footer-contacts {
     float: left;
     width: 320px;
     margin-right: 60px;
-    background: rgba(128, 0, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
+}
+
+.footer-contacts a {
+    color: #ffffff;
+}
+
+.footer-contacts a:hover {
+    text-decoration: none;
 }
 
 .footer-social {
     float: left;
     width: 180px;
-    background: rgba(128, 0, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
+    text-align: center;
 }
 
 .footer-copyright {
     float: right;
-    width: 180px;
-    background: rgba(128, 0, 0, 0.2);
-    box-shadow: 0 0 0 3px green;
+    /* max-width: 180px; */
+}
+
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    position: relative;
+    width: 43px;
+    height: 43px;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+    background: #000000;
+}
+.social-btn::before{
+    content: "";
+    position: absolute;
+    background: #000000 url("../img/sprite.png") no-repeat center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.social-btn:hover {
+    
+}
+
+.social-btn-vk::before {
+    width: 25px;
+    height: 16px;
+    background-position: -5px -179px;
+}
+
+.social-btn-fb::before {
+    width: 12px;
+    height: 22px;
+    background-position: -5px -53px;
+}
+
+.social-btn-inst::before {
+    width: 21px;
+    height: 21px;
+    background-position: -5px -117px;
+}
+
+.social-btn-vk:hover {
+    background: #fff url("../img/sprite.png") no-repeat center;
+    background-position: -5px -205px;
+    
+}
+
+.social-btn-fb:hover {
+    width: 12px;
+    height: 22px;
+    background-position: -5px -85px;
+}
+
+.social-btn-inst:hover {
+    width: 21px;
+    height: 21px;
+    background-position: -5px -148px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-copyright .btn {
+    margin-right: 0;
+    margin-top: 0px;
+    padding: 10px 22px;
+}
+
+.footer-copyright .btn:hover {
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-____ {
+    width: 18px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite-_____ {
+    width: 12px;
+    height: 12px;
+    background-position: -5px -31px;
+}
+
+.sprite-f {
+    width: 12px;
+    height: 22px;
+    background-position: -5px -53px;
+}
+
+.sprite-f-s {
+    width: 12px;
+    height: 22px;
+    background-position: -5px -85px;
+}
+
+.sprite-i {
+    width: 21px;
+    height: 21px;
+    background-position: -5px -117px;
+}
+
+.sprite-i-s {
+    width: 21px;
+    height: 21px;
+    background-position: -5px -148px;
+}
+
+.sprite-v {
+    width: 25px;
+    height: 16px;
+    background-position: -5px -179px;
+}
+
+.sprite-v-s {
+    width: 25px;
+    height: 16px;
+    background-position: -5px -205px;
 }
