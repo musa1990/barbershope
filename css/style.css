@@ -92,7 +92,8 @@ header .logo {
     left: 20px;
     width: 18px;
     height: 18px;
-    background: #ff0000;
+    background: url("../img/sprite.png") no-repeat center;
+    background-position: -5px -4px;
 }
 
 .container {
@@ -136,15 +137,17 @@ h1 {
     transform: rotate(-45deg);
 }
 
-.breadcrumbs::before:first-child {
-    background: #ccc;
+.breadcrumbs li:first-child::before {
+    display: none;
 }
 
 .breadcrumbs a {
     text-decoration: none;
     color: #000;
 }
-
+.breadcrumbs li span{
+    color: #aba9a7;
+}
 input {
     display: block;
 }
@@ -176,20 +179,20 @@ input[type="checkbox"] + label::before {
 
 input[type="checkbox"]:checked + label::after {
     content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-color: #000;
     position: absolute;
+    width: 16px;
+    height: 16px;
     top: 0px;
     left: 0px;
+    background: url("../img/sprite.png") no-repeat center;
+    background-position: -1px -27px;
 }
 
 label {
     padding-bottom: 7px;
 }
 label:hover{
-    background-color:#663d15;
+    color:#663d15;
 }
 .index-content-left {
     float: left;
@@ -235,12 +238,13 @@ input[type="radio"] + label::before {
 input[type="radio"]:checked + label::after {
     content: "";
     display: block;
-    width: 1px;
-    height: 1px;
+    width: 8px;
+    height: 8px;
     background-color: #000;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 6px;
+    left: 6px;
+    border-radius: 50%;
 }
 
 .btn {
@@ -307,7 +311,7 @@ div .item:nth-child(3n) {
     font-size: 0;
 }
 
-.content-price span.price {
+span.price {
     max-width: 110px;
     padding: 10px 27px;
     background-color: #e5e5e5;
@@ -404,7 +408,8 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);  
 }
-.social-btn:hover {
+.social-btn:hover{
+    background: #fff;
     
 }
 
@@ -426,21 +431,19 @@ footer {
     background-position: -5px -117px;
 }
 
-.social-btn-vk:hover {
+.social-btn-vk:hover::before {
     background: #fff url("../img/sprite.png") no-repeat center;
     background-position: -5px -205px;
     
 }
 
-.social-btn-fb:hover {
-    width: 12px;
-    height: 22px;
+.social-btn-fb:hover::before {
+    background: #fff url("../img/sprite.png") no-repeat center; 
     background-position: -5px -85px;
 }
 
-.social-btn-inst:hover {
-    width: 21px;
-    height: 21px;
+.social-btn-inst:hover::before {
+    background: #fff url("../img/sprite.png") no-repeat center;
     background-position: -5px -148px;
 }
 
@@ -474,64 +477,62 @@ footer {
 
 
 
+/* каталог - итем */
 
-
-
-
-
-
-
-
-.sprite {
-    background-image: url(../img/sprite.png);
-    background-repeat: no-repeat;
-    display: block;
+.catitem-content-left {
+    float: left;
+    width: 460px;
+    margin: 31px 0 -10px 0px;
 }
 
-.sprite-____ {
-    width: 18px;
-    height: 16px;
-    background-position: -5px -5px;
+.catitem-content-left img {
+    margin-right: 16px;
 }
 
-.sprite-_____ {
-    width: 12px;
-    height: 12px;
-    background-position: -5px -31px;
+.catitem-content-left img:first-child {
+    margin-right: 0px;
+    margin-bottom: 14px;
 }
 
-.sprite-f {
-    width: 12px;
-    height: 22px;
-    background-position: -5px -53px;
+.catitem-content-left img:last-child {
+    margin-right: 0px;
 }
 
-.sprite-f-s {
-    width: 12px;
-    height: 22px;
-    background-position: -5px -85px;
+.catitem-content-right {
+    padding-top: 50px;
+    float: right;
+    width: 390px;
+}
+.catitem-right-text{
+    margin: 29px 0 31px;
+}
+.catitem-content-right .content-price{
+    margin: 0px 0 50px -18px;
 }
 
-.sprite-i {
-    width: 21px;
-    height: 21px;
-    background-position: -5px -117px;
+.catitem-content-right h3{
+    font-size: 24px;
+    margin: 0 0 30px 0px;
 }
-
-.sprite-i-s {
-    width: 21px;
-    height: 21px;
-    background-position: -5px -148px;
+.item-description{
+    margin: 0 0 0 0px;
 }
-
-.sprite-v {
-    width: 25px;
-    height: 16px;
-    background-position: -5px -179px;
+.item-description li {
+    position: relative;
+    padding-left: 22px;
+    list-style-type: none;
 }
-
-.sprite-v-s {
-    width: 25px;
-    height: 16px;
-    background-position: -5px -205px;
+.item-description li::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background: #000000;
+    transform: rotate(-45deg);
+}
+.article{
+    margin: 0 0 0 175px;
+    color: #bdbcbb;
 }
